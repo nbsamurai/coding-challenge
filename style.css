@@ -1,0 +1,202 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 0.5em;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.button-container {
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 6em;
+  height: 4em;
+  border-radius: 5px;
+  border: none;
+  background-color: #72c3dc;
+  color: #efefef;
+  box-shadow: 0px 10px 6px -6px #2b8ead;
+  margin: 0.1em;
+}
+
+.grid-container > div {
+  margin: 0.05em;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+  background-color: #efefef;
+}
+
+.one {
+  border-left: 0.5em solid #6f98a8;
+}
+
+.two {
+  border-left: 0.5em solid #2b8ead;
+}
+
+.three {
+  border-left: 0.5em solid #2f454e;
+}
+
+.four {
+  border-left: 0.5em solid #2b8ead;
+}
+
+.five {
+  border-left: 0.5em solid #2f454e;
+}
+
+.six {
+  border-left: 0.5em solid #bfbfbf;
+}
+
+.seven {
+  border-left: 0.5em solid #bfbfbf;
+}
+
+.eight {
+  border-left: 0.5em solid #6f98a8;
+}
+
+.nine {
+  border-left: 0.5em solid #2f454e;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+/* Desktop specific css */
+
+@media only screen and (min-width: 960px) {
+  .container {
+    background-color: #efefef;
+  }
+
+  .header {
+    padding: 0.25em;
+    border-bottom: 0.5em solid #bfbfbf;
+    color: #333333;
+    background-color: #ffffff;
+    flex: 1 0 5%;
+  }
+
+  .inner-container {
+    flex-direction: row-reverse;
+    flex: 4 0 75%;
+  }
+
+  .footer {
+    flex: 1 0 20%;
+  }
+
+  .button-container {
+    padding-top: 2em;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  .grid-container {
+    flex-grow: 4;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grid-container > div {
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    color: #efefef;
+    flex: 1 0 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    width: 20em;
+    height: 4em;
+    margin: 1em;
+  }
+
+  div.one {
+    background-color: #6f98a8;
+  }
+
+  div.two {
+    background-color: #2b8ead;
+  }
+
+  div.three {
+    background-color: #2f454e;
+  }
+
+  div.four {
+    background-color: #2b8ead;
+  }
+
+  div.five {
+    background-color: #2f454e;
+  }
+
+  div.six {
+    background-color: #bfbfbf;
+  }
+
+  div.seven {
+    background-color: #bfbfbf;
+  }
+
+  div.eight {
+    background-color: #6f98a8;
+  }
+
+  div.nine {
+    background-color: #2f454e;
+  }
+}
